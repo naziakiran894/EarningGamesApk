@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "seed": "npx tsx scripts/seed.ts",
+    "sync-content": "npx tsx scripts/sync-content.ts",
+    "generate-game": "npx tsx scripts/generate-game.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
