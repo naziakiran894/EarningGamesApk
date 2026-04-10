@@ -7,7 +7,7 @@ interface DownloadGuideProps {
   steps: Step[];
 }
 
-export function DownloadGuide({ steps }: DownloadGuideProps) {
+export function DownloadGuide({ steps = [] }: DownloadGuideProps) {
   return (
     <div className="my-6 space-y-4">
       {steps.map((step, i) => (

@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Suspense } from "react";
-import { getGameBySlug, getRelatedGames, getTopRated, getMostViewed, getAllGames } from "@/lib/db/queries";
+import {
+  getGameBySlug,
+  getRelatedGames,
+  getTopRated,
+  getMostViewed,
+  getAllGames,
+} from "@/lib/games";
 import { getGameContent, generateTOC, extractFAQs } from "@/lib/mdx";
 import { generateGameMetadata } from "@/lib/seo";
 import { GameHero } from "@/components/game/GameHero";
@@ -20,7 +26,7 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { GameCard } from "@/components/game/GameCard";
 import { getCategoryLabel } from "@/lib/seo";
-import type { Game } from "@/lib/db/schema";
+import type { Game } from "@/lib/games";
 
 export const revalidate = 86400;
 
@@ -113,7 +119,7 @@ function SidebarList({ title, games }: { title: string; games: Game[] }) {
       </h3>
       <div className="space-y-2">
         {games.map((game) => (
-          <GameCard key={game.id} game={game} />
+          <GameCard key={game.slug} game={game} />
         ))}
       </div>
     </div>

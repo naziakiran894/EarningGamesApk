@@ -8,7 +8,7 @@ interface VersionTableProps {
   versions: VersionEntry[];
 }
 
-export function VersionTable({ versions }: VersionTableProps) {
+export function VersionTable({ versions = [] }: VersionTableProps) {
   return (
     <div className="my-6 overflow-x-auto rounded-xl border border-border">
       <table className="w-full text-sm">

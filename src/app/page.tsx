@@ -12,7 +12,7 @@ import {
   getGamesByCategory,
   getTotalDownloads,
   getTotalGamesCount,
-} from "@/lib/db/queries";
+} from "@/lib/games";
 
 export const revalidate = 3600;
 

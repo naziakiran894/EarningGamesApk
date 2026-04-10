@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getGameBySlug } from "@/lib/db/queries";
+import { getGameBySlug } from "@/lib/games";
 
 export const alt = "Game Preview";
 export const size = { width: 1200, height: 630 };

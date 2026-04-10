@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { Game } from "@/lib/db/schema";
+import type { Game } from "@/lib/games";
 
 export const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://earninggames.pk";

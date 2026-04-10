@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /search
+Disallow: /api/
+
+# Host
+Host: https://earninggames.pk
+
+# Sitemaps
+Sitemap: https://earninggames.pk/sitemap.xml

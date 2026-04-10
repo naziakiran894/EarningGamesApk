@@ -4,7 +4,7 @@ import { VersionBadge } from "./VersionBadge";
 import { DownloadButton } from "./DownloadButton";
 import { ShareButtons } from "./ShareButtons";
 import { Download, HardDrive, Smartphone } from "lucide-react";
-import type { Game } from "@/lib/db/schema";
+import type { Game } from "@/lib/games";
 import { BASE_URL } from "@/lib/seo";
 
 interface GameHeroProps {

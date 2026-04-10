@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAllGames } from "@/lib/db/queries";
+import { getAllGames } from "@/lib/games";
 
 export const revalidate = 3600;
 

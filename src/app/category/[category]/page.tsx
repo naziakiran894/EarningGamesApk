@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GameGrid } from "@/components/game/GameGrid";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
-import { getGamesByCategory } from "@/lib/db/queries";
+import { getGamesByCategory } from "@/lib/games";
 import { generateCategoryMetadata, getCategoryLabel } from "@/lib/seo";
 
 const VALID_CATEGORIES = ["casino-games", "earning-apps", "tools", "general"] as const;

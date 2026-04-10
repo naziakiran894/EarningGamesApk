@@ -1,5 +1,5 @@
 import { GameCard } from "./GameCard";
-import type { Game } from "@/lib/db/schema";
+import type { Game } from "@/lib/games";
 
 interface GameGridProps {
   games: Game[];
@@ -17,7 +17,7 @@ export function GameGrid({ games, columns = 3 }: GameGridProps) {
   return (
     <div className={`grid gap-4 ${gridCols}`}>
       {games.map((game) => (
-        <GameCard key={game.id} game={game} />
+        <GameCard key={game.slug} game={game} />
       ))}
     </div>
   );

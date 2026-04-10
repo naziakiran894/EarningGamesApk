@@ -7,7 +7,7 @@ interface SystemRequirementsProps {
   requirements: Requirement[];
 }
 
-export function SystemRequirements({ requirements }: SystemRequirementsProps) {
+export function SystemRequirements({ requirements = [] }: SystemRequirementsProps) {
   return (
     <div className="my-6 overflow-x-auto rounded-xl border border-border">
       <table className="w-full text-sm">

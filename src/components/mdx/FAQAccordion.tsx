@@ -16,7 +16,7 @@ interface FAQAccordionProps {
   items: FAQItem[];
 }
 
-export function FAQAccordion({ items }: FAQAccordionProps) {
+export function FAQAccordion({ items = [] }: FAQAccordionProps) {
   return (
     <Accordion multiple className="my-6">
       {items.map((item, i) => (

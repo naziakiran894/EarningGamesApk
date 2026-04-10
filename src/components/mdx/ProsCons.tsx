@@ -1,11 +1,11 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 
 interface ProsConsProps {
-  pros: string[];
-  cons: string[];
+  pros?: string[];
+  cons?: string[];
 }
 
-export function ProsCons({ pros, cons }: ProsConsProps) {
+export function ProsCons({ pros = [], cons = [] }: ProsConsProps) {
   return (
     <div className="grid gap-4 md:grid-cols-2 my-6">
       <div className="rounded-xl border border-green-500/20 bg-green-500/5 p-5">

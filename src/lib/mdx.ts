@@ -18,6 +18,10 @@ export interface GameFrontmatter {
   downloadCount: number;
   isNew: boolean;
   isUpdated: boolean;
+  /** Shown in home “Top Rated Apps” when true */
+  isFeatured?: boolean;
+  googlePlayUrl?: string;
+  appStoreUrl?: string;
   tags: string[];
   seoTitle: string;
   seoDescription: string;

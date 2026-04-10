@@ -30,6 +30,7 @@ osRequirements: "Android 7.0+ / iOS 12+"
 downloadCount: 0
 isNew: true
 isUpdated: false
+isFeatured: false
 tags: ["${gameName.toLowerCase()}", "pakistan", "apk download"]
 seoTitle: "${gameName} Download APK 2026 – Free App Pakistan"
 seoDescription: "Download ${gameName} APK for Pakistan. Complete guide with features, installation steps, and safety review."

@@ -1,6 +1,6 @@
 import { JsonLd } from "./JsonLd";
 import { BASE_URL } from "@/lib/seo";
-import type { Game } from "@/lib/db/schema";
+import type { Game } from "@/lib/games";
 
 interface GameSchemaProps {
   game: Game;

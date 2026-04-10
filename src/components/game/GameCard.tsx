@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { RatingStars } from "./RatingStars";
 import { VersionBadge } from "./VersionBadge";
-import type { Game } from "@/lib/db/schema";
+import type { Game } from "@/lib/games";
 
 interface GameCardProps {
   game: Game;
